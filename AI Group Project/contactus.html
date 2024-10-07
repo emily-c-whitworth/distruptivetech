@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactus.css">
+    <style>
+        body {
+            background-color: #94d3e6;
+            font-family: Georgia;
+        }
+
+        #firstp {
+            font-weight: bold;
+        }
+
+        .subheading {
+            font-style: italic;
+        }
+
+        h2 {
+            color: darkblue;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        h3 {
+            color: #004dff;
+        }
+
+        p {
+            color: rgb(52, 94, 109);
+            font-size: 15px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #004dff;
+        }
+
+        nav ul li a.current {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header Image -->
+        <img src="header.jpeg" alt="Header Image" style="width: 100%; height: 70px;">
+
+        <hr>
+
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="home.html" class="current">Home</a></li>
+                <li><a href="info.html">Information</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+
+        <p id="firstp">We Would Love to Hear From You!</p>
+
+        <!-- Contact Form -->
+        <h3 class="subheading">Fill Out the Information Below:</h3>
+        <form action="thankyou.html" method="get">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <p>
+                <label for="hear-about">How did you hear about our site?</label>
+                <select name="referrer" id="hear-about">
+                    <option value="linkedin">LinkedIn</option>
+                    <option value="facebook">Facebook</option>
+                </select>
+            </p>
+
+            <p>Do you like our site?<br>
+                <label><input type="radio" name="rating" value="yes"> Yes</label>
+                <label><input type="radio" name="rating" value="no"> No</label>
+            </p>
+
+            <p>
+                <label for="comments">Comments:</label><br>
+                <textarea rows="4" cols="40" id="comments" name="comments"></textarea>
+            </p>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <h3 class="subheading">We're Located at:</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3078.1350671334267!2d-84.73667222474084!3d39.51144117159946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88403d78f83f6be5%3A0x38a0e4c65bce2a81!2sMcVey%20Data%20Science%20Building!5e0!3m2!1sen!2sus!4v1726090902538!5m2!1sen!2sus" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <br>
+        <a href="#top">Go to Top</a>
+
+        <footer>
+            Copyright &copy; 2024 Team AI
+        </footer>
+    </div>
+</body>
+
+</html>
